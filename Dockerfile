@@ -18,8 +18,6 @@ RUN apt-get install -y git
 RUN curl –sS https://getcomposer.org/installer | php
 RUN mv composer.phar /usr/local/bin/composer
 
-COPY ./ /var/www/html
-
 # Download novosga from official github
 RUN git clone https://github.com/novosga/novosga.git
 

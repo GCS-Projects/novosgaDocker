@@ -3,8 +3,6 @@ novosga:
   ports:
    - "81:81"
    - "443:443"
-  volumes:
-   - ./www:/var/www/html
 
   links:
    - db
@@ -14,5 +12,5 @@ db:
   volumes:
    - /var/lib/mysql
   environment:
-   - MYSQL_ROOT_PASSWORD=root
-   - MYSQL_DATABASE=novosga
+   - MYSQL_ROOT_PASSWORD=phprs
+   - MYSQL_DATABASE=phprs
