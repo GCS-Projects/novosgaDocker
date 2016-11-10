@@ -4,6 +4,9 @@ novosga:
    - "81:81"
    - "443:443"
 
+  volumes:
+   - ./novosga:/var/www/html/novosga
+
   links:
    - db
 
