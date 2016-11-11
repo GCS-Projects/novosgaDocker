@@ -32,7 +32,7 @@
 ```  
 
 ##### Agora, com as permissões concluídas, é preciso executar um comando para instalar as dependências do projeto novoSGA para funcionar corretamente
-12- Para isso digite o comando: `docker exec nome_do_container composer install`  
+12- Para isso digite o comando: `docker exec -i nome_do_container bash -c "cd novosga/ && composer install"`  
 
 
 ##### Após a conclusão do composer install, o sistema estará disponível para acesso pelo navegador.
