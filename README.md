@@ -18,8 +18,8 @@
 ##### Agora é necessário fornecer permissões para a pasta do novoSGA copiada para dentro do container:
 7- Executar o comando: `docker-compose ps`  
 8- Aparecerá 2 container, um referente ao Banco de Dados (db), e outro específico do novoSGA;  
-10- Identificar o nome do container do novoSGA;  
-11- Agora é necessário executar os comandos:  
+9- Identificar o nome do container do novoSGA;  
+10- Agora é necessário executar os comandos:  
 ```powershell
 	docker exec nome_do_container chown www-data:www-data /var/www/html/novosga/
 	docker exec nome_do_container chmod 777 /var/www/html/novosga/var/
@@ -32,13 +32,13 @@
 ```  
 
 ##### Agora, com as permissões concluídas, é preciso executar um comando para instalar as dependências do projeto novoSGA para funcionar corretamente
-12- Para isso digite o comando: `docker exec -i nome_do_container bash -c "cd novosga/ && composer install"`  
+11- Para isso digite o comando: `docker exec -i nome_do_container bash -c "cd novosga/ && composer install"`  
 
 
 ##### Após a conclusão do composer install, o sistema estará disponível para acesso pelo navegador.
-13- Para acessar o container, é necessário saber qual IP aponta para o container, executando o comando: `docker exec nome_do_container cat /etc/hosts`  
-14- O IP que em sua descrição conter números identificadores, é o IP de uso para acesso ao navegador;  
-15- Agora é só digitar o IP no navegador, seguido de /novosga/public `IP_DO_CONTAINER/novosga/public`  
+12- Para acessar o container, é necessário saber qual IP aponta para o container, executando o comando: `docker exec nome_do_container cat /etc/hosts`  
+13- O IP que em sua descrição conter números identificadores, é o IP de uso para acesso ao navegador;  
+14- Agora é só digitar o IP no navegador, seguido de /novosga/public `IP_DO_CONTAINER/novosga/public`  
 
 
 ##### Assim você terá acesso ao sistema do novoSGA.
