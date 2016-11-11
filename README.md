@@ -10,7 +10,7 @@
 1- Instalar o [Docker](https://docs.docker.com/engine/getstarted/step_one/) no seu SO;  
 2- Instalar o [Docker Compose](https://docs.docker.com/compose/install/), dependendo do SO, ele já vem instalado com a instalação do Docker;  
 3- Clonar o repositório desse GitHub contendo o dockerfile e o docker-compose file;  
-4- Clonar também o repositório do novoSGA no [GitHub](https://github.com/GCS-Projects/novosga) ou [GitHub Oficial](https://github.com/novosga/novosga), dentro da pasta do novosgaDocker clonado no item 3; 
+4- Clonar também o repositório do novoSGA no [GitHub](https://github.com/GCS-Projects/novosga) ou [GitHub Oficial](https://github.com/novosga/novosga), dentro da pasta do novosgaDocker clonado no item 3;  
 5- Acessar via terminal a pasta do novosgaDocker;  
 6- Executar o comando: `docker-compose up -d` (-d é uma tag para manter em segundo plano a execução dos container após a conclusão do "up");  
 
@@ -44,7 +44,7 @@
 ##### Assim você terá acesso ao sistema do novoSGA.
 No primeiro acesso ao sistema, será necessário fazer a instalação do mesmo, que irá configurar perfil administrador de login, acesso ao banco de dados e outras informações necessárias, para isso é só seguir apresentados no próprio site, com algumas informações listadas a seguir:  
 * Banco de dados MySQL/MariaDB
-* Host do banco de dados: IP com descrição de db quando digitado o comando do passo 13
+* Host do banco de dados: IP com descrição de db quando digitado o comando do passo 12
 * Porta: 3306
 * Usuário do banco de dados: root
 * Senha do banco de dados: phprs
